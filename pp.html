@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  aside {
+width: 200px;
+height: 180px;
+float: left;
+margin-top: 10px;
+border: solid 1px blue;
+}
+  body{
+   
+  }
+    *{margin:0;padding:0;}
+    ul,li{list-style:none;}
+    .slide{height:324px;overflow:hidden;}
+    .slide ul{width:calc(100% * 4);display:flex;animation:slide 20s infinite;} /* slide를 8초동안 진행하며 무한반복 함 */
+    .slide li{width:calc(100% / 4);height:324px;}
+    .slide li:nth-child(1){background:#fff;}
+    .slide li:nth-child(2){background:#fff;}
+    .slide li:nth-child(3){background:#fff;}
+    .slide li:nth-child(4){background:#fff;}
+    @keyframes slide {
+      0% {margin-left:50;} /* 0 ~ 10  : 정지 */
+      10% {margin-left:50;} /* 10 ~ 25 : 변이 */
+      25% {margin-left:-100%;} /* 25 ~ 35 : 정지 */
+      35% {margin-left:-100%;} /* 35 ~ 50 : 변이 */
+      50% {margin-left:-150%;}
+      60% {margin-left:-150%;}
+      75% {margin-left:-200%;}
+      85% {margin-left:-200%;}
+      100% {margin-left:0;}
+    }
+  </style>
+</head>
+<body>
+<section> 
+  <div class="slide">
+    <ul>
+      
+      <li><a href=" "> <img src="./img/name4.png" width="1000px"></a></li>
+      <li><a href=" "> <img src="./img/name5.png" width="1000px"></a></li>
+      <li><a href=" "> <img src="./img/name6.png" width="1000px"></a></li>
+    </ul>
+  </div>
+  </section> 
+</body>
+</html>
